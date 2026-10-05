@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "pasame-mobile",
+    "slug": "pasame-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.jpg",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A",
+        "foregroundImage": "./assets/logo.jpg"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.benjapallauta.pasamemobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "13fa33ce-423b-4d56-9b3b-8099b10991f9"
+      }
+    }
+  }
+}
