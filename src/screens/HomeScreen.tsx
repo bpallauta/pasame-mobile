@@ -3,14 +3,20 @@ import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-nati
 import { colors } from '../theme/colors';
 import { globalStyles } from '../theme/globalStyles';
 
+import { useAuth } from '../context/AuthContext';
+
 export default function HomeScreen({ navigation }: any) {
+  const { user } = useAuth();
+  
+  // Extraemos el primer nombre para el saludo (si existe)
+  const firstName = user?.name ? user.name.split(' ')[0] : 'Invitado';
 
   return (
     <ScrollView style={globalStyles.container} showsVerticalScrollIndicator={false}>
       <View style={styles.headerContainer}>
         <View>
           <Text style={styles.logo}>Pásame</Text>
-          <Text style={styles.header}>Hola, Benjamín 👋</Text>
+          <Text style={styles.header}>Hola, {firstName} 👋</Text>
           <Text style={styles.subHeader}>¿Qué quieres hacer?</Text>
         </View>
         <View style={styles.avatarContainer}>

@@ -8,7 +8,7 @@ export default function AdminPanelScreen() {
   const { user } = useAuth();
 
   return (
-    <SafeAreaView style={globalStyles.safeArea}>
+    <SafeAreaView style={globalStyles.container}>
       <View style={styles.container}>
         <Text style={styles.title}>Panel de Control</Text>
         <Text style={styles.subtitle}>👑 Acceso exclusivo Administrador</Text>
